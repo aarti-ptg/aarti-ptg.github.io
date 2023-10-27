@@ -21,23 +21,23 @@
             background-color: #998f85;
             color: #fff;
             text-align: center;
-            padding: 40px 0;
+            padding: 20px 0;
             font-family: "Playfair Display", serif;
         }
 
         .container {
             max-width: 800px;
-            margin: 60px auto;
+            margin: 20px auto;
             background-color: #fff;
-            padding: 50px;
+            padding: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
 
         h2 {
             font-family: "Playfair Display", serif;
-            font-size: 2em;
-            margin-bottom: 30px;
+            font-size: 1.8em;
+            margin-bottom: 20px;
             color: #998f85;
             text-align: center;
         }
@@ -47,40 +47,36 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap; /* Allows items to wrap to the next line */
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         li {
             width: 260px;
-            padding: 20px;
+            padding: 10px;
             border-radius: 8px;
             text-align: center;
             background-color: #f6f2ec;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px; /* Space between wrapped items */
+            margin-bottom: 20px;
         }
 
         .cocktail-name {
             font-weight: 700;
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin-top: 10px;
             color: #998f85;
         }
 
         .cocktail-description {
             color: #6c6c6c;
-            font-size: 0.9em;
+            font-size: 0.8em;
             font-weight: 300;
         }
 
         .cocktail-image {
-            width: 200px;
-            height: 250px;
+            width: 180px;
+            height: 230px;
             object-fit: cover;
             margin-bottom: 5px;
             border-radius: 8px;
@@ -89,7 +85,16 @@
         /* Media query for mobile devices */
         @media (max-width: 768px) {
             li {
-                width: 100%; /* Take full width on smaller screens */
+                width: 90%; /* Increase width on smaller screens */
+            }
+
+            .container {
+                padding: 10px; /* Decrease padding on smaller screens */
+            }
+
+            .cocktail-image {
+                width: 150px; /* Reduce image size on smaller screens */
+                height: 190px;
             }
         }
     </style>
